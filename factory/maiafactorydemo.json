@@ -1,0 +1,9 @@
+{
+	"name": "maiafactorydemo",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9aecc1bd-e3c9-4113-8de4-d0804fdbca51",
+		"tenantId": "ae796c7f-785a-4913-b09e-d5e9c857b87e"
+	}
+}
