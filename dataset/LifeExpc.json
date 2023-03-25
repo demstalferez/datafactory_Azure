@@ -1,0 +1,110 @@
+{
+	"name": "LifeExpc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Life expectancy ",
+				"type": "String"
+			},
+			{
+				"name": "Adult Mortality",
+				"type": "String"
+			},
+			{
+				"name": "infant deaths",
+				"type": "String"
+			},
+			{
+				"name": "Alcohol",
+				"type": "String"
+			},
+			{
+				"name": "percentage expenditure",
+				"type": "String"
+			},
+			{
+				"name": "Hepatitis B",
+				"type": "String"
+			},
+			{
+				"name": "Measles ",
+				"type": "String"
+			},
+			{
+				"name": " BMI ",
+				"type": "String"
+			},
+			{
+				"name": "under-five deaths ",
+				"type": "String"
+			},
+			{
+				"name": "Polio",
+				"type": "String"
+			},
+			{
+				"name": "Total expenditure",
+				"type": "String"
+			},
+			{
+				"name": "Diphtheria ",
+				"type": "String"
+			},
+			{
+				"name": " HIV/AIDS",
+				"type": "String"
+			},
+			{
+				"name": "GDP",
+				"type": "String"
+			},
+			{
+				"name": "Population",
+				"type": "String"
+			},
+			{
+				"name": " thinness  1-19 years",
+				"type": "String"
+			},
+			{
+				"name": " thinness 5-9 years",
+				"type": "String"
+			},
+			{
+				"name": "Income composition of resources",
+				"type": "String"
+			},
+			{
+				"name": "Schooling",
+				"type": "String"
+			}
+		]
+	}
+}

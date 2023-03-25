@@ -1,0 +1,48 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "LifeExpc",
+						"type": "DatasetReference"
+					},
+					"name": "LifeExpc"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          Country as string,",
+				"          Year as string,",
+				"          Status as string,",
+				"          {Life expectancy } as string,",
+				"          {Adult Mortality} as string,",
+				"          {infant deaths} as string,",
+				"          Alcohol as string,",
+				"          {percentage expenditure} as string,",
+				"          {Hepatitis B} as string,",
+				"          {Measles } as string,",
+				"          { BMI } as string,",
+				"          {under-five deaths } as string,",
+				"          Polio as string,",
+				"          {Total expenditure} as string,",
+				"          {Diphtheria } as string,",
+				"          { HIV/AIDS} as string,",
+				"          GDP as string,",
+				"          Population as string,",
+				"          { thinness  1-19 years} as string,",
+				"          { thinness 5-9 years} as string,",
+				"          {Income composition of resources} as string,",
+				"          Schooling as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> LifeExpc"
+			]
+		}
+	}
+}
